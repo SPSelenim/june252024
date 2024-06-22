@@ -9,10 +9,33 @@ public WebDriver driver=null;
 
 public String development="//a[@name=\"Development\"]"; 
 public String QA="//a[@name=\"QA\"]";
+public String DevOPs="//a[@name=\"DevOPs\"]";
 
 	public Search1(WebDriver driver)
 	{
 		this.driver=driver;
+	}
+	
+	public WebElement getDevOps()
+	{
+		WebElement ele=driver.findElement(By.xpath(DevOPs));
+	return ele;
+	}
+	
+	public void clickDevOps()
+	{
+		try
+		{
+			getDevOps().click();
+			Thread.sleep(2000);
+			System.out.println( "Clicked on DevOps");
+			driver.navigate().back();
+		
+		}
+		catch(Exception e)
+		{
+			System.out.println( e.getMessage());
+		}
 	}
 	
 	public WebElement getDevelopment()
@@ -51,6 +74,8 @@ public String QA="//a[@name=\"QA\"]";
 		{
 			getQA().click();
 			Thread.sleep(2000);
+			driver.navigate().back();
+			
 			System.out.println( "Clicked on QA");
 		}
 		catch(Exception e)
