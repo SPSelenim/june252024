@@ -5,6 +5,8 @@
     <classes>
       <class name="search2.TC2Search"/>
       <class name="home1.TC1Home"/>
+      <class name="search2.TC3Search2"/>
+    
         </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
