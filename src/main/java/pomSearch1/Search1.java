@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class Search1 {
 public WebDriver driver=null;
-
+//cl check
 public String development="//a[@name=\"Development\"]"; 
 public String QA="//a[@name=\"QA\"]";
 public String DevOPs="//a[@name=\"DevOPs\"]";
